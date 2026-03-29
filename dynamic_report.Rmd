@@ -60,7 +60,9 @@ latest_data <-logged_data %>%
 glimpse(latest_data)
 
 image_read("https://www.nzherald.co.nz/resizer/v2/YLJSXA4TGYJD7VTJPXRBJ2C7HU.jpg?auth=87651fb9a97646e5ed5554fe0f2dcabe92be9e8fdc51950111fa43c0f0a54650&width=1440&height=810&quality=70&smart=true") %>%
-  image_scale("800")
+  image_scale("800") %>%
+  image_border()
+
 ```
 
 ## Key Summary Statistics
@@ -129,7 +131,8 @@ paste0("Even when vehicles were 'Very Busy', ",
        "% of services still arrived on time. This suggests crowding does not necessarily cause delays.")
 
 image_read("https://cities-today.com/wp-content/uploads/2021/07/Auckland-City-Council-e1626183282122.jpg") %>%
-  image_scale("800")
+  image_scale("800") %>%
+  image_border()
 
 ```
 
@@ -163,7 +166,8 @@ paste0("Traffic congestion was more frequent on evening commutes (University →
        " events on morning commutes (Home → University).")
 
 image_read("https://i0.wp.com/newsroom.co.nz/wp-content/uploads/2026/03/congestion-on-auckland-motorway-1.jpg?fit=1024%2C677&ssl=1") %>%
-  image_scale("800")
+  image_scale("800") %>%
+  image_border()
 
 ```
 
