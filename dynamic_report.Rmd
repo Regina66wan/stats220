@@ -5,7 +5,7 @@ output: html_fragment
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
-library(tidyverse)
+
 ```
 
 
@@ -32,6 +32,7 @@ h3 {
 This dynamic report presents an analysis of public transport observations collected over a two-week period on a fixed route between home and university. The data captures key aspects of service quality including punctuality, crowding levels, traffic congestion, and travel duration.
 
 ```{r}
+library(tidyverse)
 
 # Read and prepare data
 logged_data <- read_csv("Auckland Public Transport Observation.csv")
