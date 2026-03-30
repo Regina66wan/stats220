@@ -42,7 +42,7 @@ This dynamic report presents an analysis of public transport observations collec
 library(magick)
 
 # Read and prepare data
-logged_data <- read_csv("Auckland Public Transport Observation.csv")
+logged_data <- read_csv("https://docs.google.com/spreadsheets/d/1g41H1INdYmlr7OBXCr-zzAdvTtf1IaEFwzv1orTCR_4/export?format=csv")
 
 # Change the name
 latest_data <-logged_data %>%
